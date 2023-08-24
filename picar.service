@@ -5,8 +5,10 @@ After=multi-user.target
 
 [Service]
 Type=forking
-WorkingDirectory=/home/pi/picar-x/
-ExecStart=python3 /home/pi/picar-x/examples/minecart_plus.py &&
+WorkingDirectory=/home/admin/picar-x/
+ExecStart=python3 /home/admin/picar-x/examples/app_control.py &&
+Restart=always
+Restart
 
 [Install]
 WantedBy=multi-user.target
